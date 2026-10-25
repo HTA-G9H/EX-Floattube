@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+
+    <AssemblyName>EXoticaFloatube</AssemblyName>
+    <RootNamespace>FloatTube</RootNamespace>
+    <ApplicationIcon>app.ico</ApplicationIcon>
+    <Version>1.1.0</Version>
+    <AssemblyTitle>EXotica Floatube</AssemblyTitle>
+    <Description>EXotica Floatube — a floating, always-on-top YouTube mini-player.</Description>
+
+    <!-- Lets this Windows-targeting app build from Linux/macOS too -->
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.*" />
+    <EmbeddedResource Include="app.ico" LogicalName="FloatTube.app.ico" />
+    <EmbeddedResource Include="support-qr.png" LogicalName="FloatTube.support-qr.png" />
+    <EmbeddedResource Include="support-kofi.png" LogicalName="FloatTube.support-kofi.png" />
+  </ItemGroup>
+
+</Project>
